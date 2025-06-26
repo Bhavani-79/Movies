@@ -5,7 +5,7 @@ const MovieDetails = (props) => {
     const { title, rating, posterPath,id } = details
     const path = `https://image.tmdb.org/t/p/w500${posterPath}`
     return (
-      <LinkItem to={`/${id}`} >
+      <LinkItem to={`/movies/${id}`} >
        <ListContainer>
             <Button>
                 <Image src={path} />
